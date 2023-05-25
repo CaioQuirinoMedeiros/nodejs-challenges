@@ -19,7 +19,6 @@ class Database {
   }
 
   #persist() {
-    const filename = fileURLToPath(import.meta.url)
     fs.writeFile(dbPath, JSON.stringify(this.#database, undefined, 2))
   }
 
